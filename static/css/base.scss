@@ -1,0 +1,29 @@
+@charset "utf-8";
+$divide: 10;
+$pswWidth: 375;
+$ppr: 375px/$divide/1rem; // 定义单位
+
+// https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+@mixin toRem($property, $values...) {
+  $max: length($values);
+  $remValues: '';
+  @for $i from 1 through $max {
+    $value: nth($values, $i) * $divide / $pswWidth;
+    $remValues: #{$remValues + $value}rem;
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+  #{$property}: $remValues;
+}
+
+
+$font-color: #333;
+$font-color-light: #666;
+$font-color-lighter: #999;
+
+$bg-color: #f2f2f2;
+$bg-color-blue: #41a3fc;
+
+$border-color: #e5e5e5;
+$border-color-light: #cccccc;
