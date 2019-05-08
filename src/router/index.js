@@ -41,20 +41,20 @@ import NginxMarkDown from "@/markdown/nginx/env.md";
 
 export default [
   {
-    path: "/",
+    path: "",
     name: "node准备",
     iconCls: "el-icon-menu",
     component: Layout,
     children: [
       {
-        path: "/node-doc",
+        path: "node-doc",
         name: "node环境搭建",
         component: NodeDoc
       }
     ]
   },
   {
-    path: "/ide",
+    path: "",
     name: "IDE准备",
     iconCls: "el-icon-menu",
     component: Layout,
@@ -72,7 +72,7 @@ export default [
     ]
   },
   {
-    path: "/mobile",
+    path: "",
     name: "移动端",
     iconCls: "el-icon-menu",
     component: Layout,
@@ -95,7 +95,7 @@ export default [
     ]
   },
   {
-    path: "/react",
+    path: "",
     name: "react",
     iconCls: "el-icon-menu",
     component: Layout,
@@ -119,7 +119,7 @@ export default [
         component: MacOs
       },
       {
-        path: "widows",
+        path: "windows",
         name: "widows开发环境",
         component: Widows
       },
@@ -179,7 +179,7 @@ export default [
     ]
   },
   {
-    path: "/Material",
+    path: "",
     name: "资料",
     iconCls: "el-icon-menu",
     component: Layout,
@@ -206,7 +206,7 @@ export default [
     //  redirect: '/main'
   },
   {
-    path: "/nginx",
+    path: "",
     name: "nginx",
     iconCls: "el-icon-menu",
     component: Layout,
